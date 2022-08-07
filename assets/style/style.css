@@ -4,3 +4,46 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+       background-color:  rgb(225,180 , 195); 
+    background-image: url("../images/db1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: right;
+    background-position-y :10vh; 
+    background: linear-gradient(rgb(225,225,225) rgb(225, 192, 203));   
+
+}
+
+.wrapper{
+    margin: auto;
+    padding:  10px 0px;
+    width: 95%;
+}
+
+.header{
+    padding: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    color: goldenrod;
+}
+
+.brand-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 20px;
+}
+
+.lovers-message{
+    margin-right: -120px;
+}
+
+header img{
+    width: 50%;
+}
