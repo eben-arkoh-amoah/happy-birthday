@@ -54,6 +54,17 @@ main{
     align-items: center;
 }
 
+.new-age{
+    background-color: #fff;
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
 #message-section{
     gap: inherit;
 }
@@ -61,6 +72,10 @@ main{
 
 section{
     width: 85%;
+}
+
+article{
+    position: relative;
 }
 
 textarea{
@@ -73,5 +88,43 @@ textarea{
     color: blueviolet;
     font-weight: bolder;
     font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 10px;
+}
+
+button{
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    border-radius: 50px;
+    background-color: white ;
+    padding: 10px 15px;
+    color: goldenrod;  
+    font-style: italic; 
+}
+
+fieldset{
+    border: none;
+    display: flex; 
+}
+
+label{
+    font-weight: bolder;
+    color: white;
+    font-size: 15px;
+     padding-right: 10px;
+     width: 100px;
+}
+
+input{
+    margin-bottom: 20px;
+   border: none;
+   background-color: rgba(225,225,225, .1);
+}
+
+[value]{
+    color: blueviolet;
+    font-size: 15px;
+    font-weight: bold;
     font-style: oblique;
 }
