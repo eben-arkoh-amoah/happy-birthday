@@ -179,7 +179,7 @@ footer{
     text-align: center;
 }
 
-.heart-anim, .heart{
+.heart-animtion{
      animation-duration: 3s;
         animation-iteration-count: 19;
         animation-fill-mode: forwards;
@@ -196,7 +196,7 @@ footer{
     }
 }
 
-.message{
+.message-animation{
      animation-duration: 3s;
         animation-iteration-count: 19;
         animation-fill-mode: forwards;
@@ -206,7 +206,7 @@ footer{
 
 @-moz-keyframes message{
     10%{
-        margin-left: 250px;
+        margin:  250px ;
         transform: rotateY(360deg);
         margin-top: 10px;
         color: goldenrod;
@@ -231,31 +231,34 @@ footer{
     }
 }
 
-button{
+.btn{
       animation-duration: 60s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        animation-name: bow;
+        animation-name: btn;
         animation-timing-function: ease;
 }
 
 
-@-moz-keyframes bow{
+@-moz-keyframes btn{
 
     1%{
      
        background: transparent;
        color: transparent;
+       z-index: -2;
     }
     50%{
      
        background: transparent;
        color: transparent;
+        z-index: -2;
     }
     90%{
      
        background: transparent;
        color: transparent;
+        z-index: -2;
     }
     
 }
