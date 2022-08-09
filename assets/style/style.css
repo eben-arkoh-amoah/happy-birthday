@@ -16,7 +16,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 250px;
+    gap: 100px;
 }
 
 header{
@@ -66,6 +66,7 @@ article{
 }
 
 .heart{
+    display: none;
     position: absolute;
     top: 150px;
     left: 150px;
@@ -182,24 +183,42 @@ footer{
 
 
 .heart-animtion{
-     animation-duration: 1s;
+    display: block;
+     animation-duration: .6s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-name: heart;
         animation-timing-function: ease;
 }
 
-@keyframes heart{   
+@keyframes heart{ 
+    5%{
+        left: 230px;
+        top: 50px;
+    }
+    
+    12%{
+        left: 200px;
+    }
+
+    20%{
+      top: 150px;
+    }
+
   25%{
-    top: 130px;
+    /* top: 100px; */
+    transform: rotateY(360deg);
   }
 
   50%{
+     left: 180px;
     top: 150px;
+    transform: rotateY(45deg);
   }
 
   75%{
-    top: 130px;
+     left: 165px;
+  top : 50px;
   }
    
     100%{
