@@ -7,29 +7,26 @@
 
 body{
        background-color:  rgb(225,180 , 195); 
-    background-image: url("../images/db1.jpg");
+    background-image: url("../images/she.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-x: right;
-    background-position-y :10vh; 
     background: linear-gradient(rgb(225,225,225) rgb(225, 192, 203));   
 
 }
 
 .wrapper{
+    position: relative;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 250px;
-     padding:  10px auto;
-    width: 95%;
 }
 
 header{
-    display: flex;
-    flex-direction: row;
     justify-content:space-between ;
-    color: goldenrod;
+    color: green;
+    height: 75px ;
+    width: 100%;
+    text-align: center;
 }
 
 .brand-text{
@@ -40,18 +37,16 @@ header{
 }
 
 .lovers-message{
-    margin-right: -130px;
+   padding-left: 100px;
 }
 
-header img{
-    width: 50%;
-}
-
-main{
+main{    
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+      padding:  10px auto;
+    width: 95%;
 }
 
 .new-age{
@@ -65,42 +60,91 @@ main{
     width: 30px;
 }
 
-#message-section{
-    gap: inherit;
-}
-
-
 section{
     width: 85%;
+    background-color: rgb(219, 219, 248);
 }
 
 article{
-    position: relative;
+    margin-top: -100px;
 }
 
+.heart{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.heart .message{
+    margin: 90px 0 0 -40px;
+    text-align: center;
+    z-index: 5;
+    vertical-align: middle;
+    background: transparent;
+    width: 80px;
+    line-height: 25px;
+    color: white;
+}
+
+
+.new-age{
+    position: relative;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-bottom: 150px solid rgb(162, 228, 30);
+    transform: rotate(0deg);
+    background: transparent;
+}
+
+.new-age::before,.new-age::after{
+    position: absolute;
+    content: " ";
+    height: 100px;
+    width: 85px;
+    border-radius: 50% ;
+    background:linear-gradient(180deg, yellowgreen 10%, rgb(235, 235, 142), whitesmoke);
+    top: 119px;
+    z-index: -2;
+}
+
+.new-age::before{
+   left: -3px;
+}
+
+.new-age::after{
+ left: -82px;
+}
+
+
 textarea{
-    width: 100%;
+    position: absolute;
+    width: 93%;
     height: 170px;
     overflow: hidden;
-    background: linear-gradient(rgba(225,225,225, .3), rgba(225, 192, 203, .3));
-    border: 1px solid white;
+    background: linear-gradient(white, rgb(130, 247, 130));
+    border: 1px solid blue;
     border-radius: 2%;
     color: blueviolet;
     font-weight: bolder;
     font-size: 20px;
     font-style: oblique;
-    margin-bottom: 10px;
+    top: 370px;
 }
 
 button{
     position: absolute;
-    right: 5px;
-    bottom: 15px;
+    top: 500px;
+    left: 150px;
     border-radius: 50px;
+    border: none;
     background-color: white ;
     padding: 10px 15px;
     color: goldenrod;  
     font-style: italic; 
+}
+
+#celebrate-and-celebrators{
+    margin-top: 170px;
 }
 
 fieldset{
@@ -115,6 +159,7 @@ label{
      padding-right: 10px;
      width: 100px;
 }
+
 
 input{
     margin-bottom: 20px;
